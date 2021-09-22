@@ -1,4 +1,4 @@
-{% set version = "0.5.7" %}
+{% set version = "0.6.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jfa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jfa/jfa_{{ version }}.tar.gz
-  sha256: e46fd018f5cbe0e79aeba923c5516df7b7251e1b1b8bef6f81de1d5a0ed9a545
+  sha256: c218eee0ff1970f94e2b4f0e4f6671ca25ec7980e5cf025bced185f17f939ccd
 
 build:
   merge_build_host: true  # [win]
@@ -27,8 +27,10 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-extradistr
   run:
     - r-base
+    - r-extradistr
 
 test:
   commands:
