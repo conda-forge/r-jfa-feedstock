@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jfa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jfa/jfa_{{ version }}.tar.gz
-  sha256: efa369bf730c6a654dbccd819b2d3988344311babe70cd41e925d601e7081eb8
+  sha256: 5c9da6228ccb7acd29192561f43325664b064ac8e69e4002207e51fd4301958a
 
 build:
   merge_build_host: true  # [win]
