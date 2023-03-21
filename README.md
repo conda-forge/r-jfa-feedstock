@@ -1,11 +1,11 @@
-About r-jfa
-===========
+About r-jfa-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jfa-feedstock/blob/main/LICENSE.txt)
 
 Home: https://koenderks.github.io/jfa/, https://github.com/koenderks/jfa
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jfa-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements the audit sampling workflow as discussed in Derks et al. (2019) <doi:10.31234/osf.io/9f6ub>. The package makes it easy for an auditor to plan a statistical sample, select the sample from the population, and evaluate the sample using various methods according to the International Standards on Auditing. Furthermore, the package implements Bayesian equivalents of these methods.
 
