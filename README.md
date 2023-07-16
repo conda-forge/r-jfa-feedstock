@@ -3,6 +3,7 @@ About r-jfa-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jfa-feedstock/blob/main/LICENSE.txt)
 
+
 About r-jfa
 -----------
 
@@ -13,6 +14,7 @@ Package license: GPL-3.0-only
 Summary: Provides statistical methods for auditing as implemented in JASP for Audit (Derks et al., 2021 <doi:10.21105/joss.02733>). First, the package makes it easy for an auditor to plan a statistical sample, select the sample from the population, and evaluate the misstatement in the sample compliant with international auditing standards. Next to classical audit sampling methodology, the package implements Bayesian equivalents of these methods whose statistical underpinnings are described in Derks et al. (2021) <doi:10.1111/ijau.12240>, Derks et al. (2021) <doi:10.31234/osf.io/kzqp5>, and Derks et al. (2022) <doi:10.31234/osf.io/8nf3e>. Second, the package provides statistical methods for auditing data, including (Bayesian) tests of digit distributions and tests for repeated values.
 
 Development: https://github.com/koenderks/jfa
+
 About r-jfa
 -----------
 
