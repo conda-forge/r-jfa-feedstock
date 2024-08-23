@@ -1,4 +1,4 @@
-{% set version = "0.6.7" %}
+{% set version = "0.7.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jfa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jfa/jfa_{{ version }}.tar.gz
-  sha256: 2b0328d4bbc06c19e3005274e0deccd1104a85aa0c9d7b34de93c84e93c8d12b
+  sha256: 844843f36c8dceee0a887e4bae50eac71da1eb132e5a72a5b60f5c67482879a7
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("m2w64_c") }}      # [win]
     - {{ compiler('cxx') }}        # [not win]
     - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
