@@ -1,4 +1,4 @@
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jfa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jfa/jfa_{{ version }}.tar.gz
-  sha256: db6d3ab2cdc9ad1d2a4e3e8a085316f833e8337505b68e3390afc9cf4005b7aa
+  sha256: 034c9a9f723f5fe8af0f9606b5caa807d6ba6eda8112507858dc47b3b114d43b
 
 build:
   number: 0
