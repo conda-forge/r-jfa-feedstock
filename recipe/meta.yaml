@@ -52,6 +52,7 @@ requirements:
     - r-rstantools >=2.2.0
     - r-stanheaders >=2.18.0
     - r-truncdist
+    - tbb-devel
   run:
     - r-base
     - r-bde
