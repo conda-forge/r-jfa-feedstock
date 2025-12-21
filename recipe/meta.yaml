@@ -12,7 +12,7 @@ source:
   sha256: db6d3ab2cdc9ad1d2a4e3e8a085316f833e8337505b68e3390afc9cf4005b7aa
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,6 +25,7 @@ requirements:
     - {{ stdlib("m2w64_c") }}      # [win]
     - {{ compiler('cxx') }}        # [not win]
     - {{ compiler('m2w64_cxx') }}  # [win]
+    - {{ compiler('fortran') }}    # [osx]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}sed               # [win]
     - {{ posix }}grep              # [win]
@@ -51,6 +52,7 @@ requirements:
     - r-rstantools >=2.2.0
     - r-stanheaders >=2.18.0
     - r-truncdist
+    - tbb-devel
   run:
     - r-base
     - r-bde
